@@ -108,6 +108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 377967029676282129}
   - component: {fileID: 2148085720887319997}
+  - component: {fileID: 8112019934984766138}
   m_Layer: 0
   m_Name: Tree_Rustle
   m_TagString: Untagged
@@ -234,3 +235,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8112019934984766138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6760356750045287186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0f7a3b0629075499a9f47668952222, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

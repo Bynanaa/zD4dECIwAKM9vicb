@@ -6,6 +6,7 @@ public class PlayerAnimationSounds : MonoBehaviour
 {
 
     AudioSource  animationSoundPlayer;  
+    public AudioClip[] FootstepsAudioClip
 
     // Start is called before the first frame update
     void Start()
