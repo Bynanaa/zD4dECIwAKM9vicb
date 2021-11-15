@@ -4,22 +4,32 @@ using UnityEngine;
 
 public class PlayerJumpSounds : MonoBehaviour
 {
+    public AudioSource JumpSoundSource;
+    public AudioClip JumpAudioClip;
+    void PlayerFootstepSound()
+    {
+        Debug.Log("Player Jump");
+        JumpSoundSource.PlayOneShot(JumpAudioClip);
 
-    AudioSource  JumpSoundPlayer;  
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        JumpSoundPlayer = GetComponent<AudioSource>();
+      JumpSoundSource = gameObject.AddComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-       Debug.Log("Player Jump");
+
     }
-    private void PlayerFootstepSound()
+    private void jumpUp()
     {
-        JumpSoundPlayer.Play();
+    JumpSoundSource.PlayOneShot(JumpAudioClip);
+    Debug.Log("Player Jump");
     }
+
 }
+
